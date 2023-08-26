@@ -26,17 +26,14 @@ def balancing_parentheses(string):
     for i in range(len(string)):
 
         if string[i] == '(':
-
-            stack.insert(0, '(')
+            stack.append('(')
 
         elif string[i] == ')':
 
             if len(stack) > 0:
-
                 stack.pop()
 
             else:
-
                 extra += 1
 
     extra += len(stack)
