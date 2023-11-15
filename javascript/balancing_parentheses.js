@@ -21,4 +21,15 @@ if (require.main === module) {
 module.exports = balancingParentheses;
 
 // Please add your pseudocode to this file
+/**
+ * given a string
+ * iterate over the string,
+ * tally the total of open and close parentheses,
+ * return the absolute value of the difference
+ */
 // And a written explanation of your solution
+/**
+ * for this problem, the only thing that matters is the number of parentheses needed to get
+ * a working balance, which means we don't care about the type of parenthesis needed,
+ * so we can just iterate over the string and return the difference of the two values
+ */
