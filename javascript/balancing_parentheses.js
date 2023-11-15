@@ -1,4 +1,16 @@
 function balancingParentheses(string) {
+  let closes = 0;
+  let opens = 0;
+  for ( let index = 0; index < string.length; index++) {
+    const value = string[index]
+    if (value === "(") {
+      opens++;
+    }
+    if (value === ")") {
+      closes++;
+    }
+  }
+  return Math.abs(opens - closes);
   // type your code here
 }
 
